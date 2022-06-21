@@ -34,7 +34,7 @@ namespace KodeKataChallenge
                         return kvp.Value;
                     }
 
-                    // OvkCode for a specific company was requested - return this second if we have it.
+                    // OvkCode for a specific company was requested - return this if we have it.
                     if (kvp.Key.CompanyName == companyName && string.IsNullOrEmpty(kvp.Key.PersonInterestId))
                     {
                         return kvp.Value;
