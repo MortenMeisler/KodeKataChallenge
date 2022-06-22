@@ -7,7 +7,7 @@ using KodeKataChallenge.Models;
 
 namespace KodeKataChallenge
 {
-    public class OvkService
+    public class OvkService : IOvkService
     {
         private readonly InternalOvkService _internalOvkService;
         public OvkService(string ovkData)
