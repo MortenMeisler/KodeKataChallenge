@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using KodeKataChallenge.Models;
+﻿using KodeKataChallenge.Models;
 
 namespace KodeKataChallenge
 {
     public class OvkService : IOvkService
     {
         private readonly InternalOvkService _internalOvkService;
-        public OvkService(string ovkData)
+        public OvkService(InternalOvkService internalOvkService)
         {
-            _internalOvkService = new InternalOvkService(ovkData);
+            _internalOvkService = internalOvkService;
         }
         public string FindOVKKode(string indberetterkode, string virksomhed, string person)
         {

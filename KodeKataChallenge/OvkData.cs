@@ -16,6 +16,4 @@ namespace KodeKataChallenge
             75005,19007,,3376119800
             30303,18621,,";
     }
-
-    
 }
